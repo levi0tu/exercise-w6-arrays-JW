@@ -13,11 +13,13 @@ const pokemons = [
   "Pikachu",
   "Pidgey"
 ];
-
 const countThem = () => {
+  let size = pokemons.length;
+  document.getElementById("app").textContent = `I have ${pokemons.length} pokemons!`;
   // print out, in a sentence, how many pokemons I have.
   // like: "I have x pokemons!"
 };
+countThem();
 
 const orderThem = () => {
   // order the pokemons alphabetically
