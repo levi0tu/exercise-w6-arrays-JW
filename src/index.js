@@ -43,8 +43,11 @@ const makeThemBig = () => {
 makeThemBig();
 
 const onlyTheBs = () => {
+  let letters = pokemons.filter(pokemon => pokemon.startsWith(`B`));
+  document.getElementById("app3").textContent = `${letters}`;
   // only print the pokemons that starts with B
 };
+onlyTheBs();
 
 const notTheCs = () => {
   // remove all pokemons that starts with C
