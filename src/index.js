@@ -73,13 +73,19 @@ const catchPokemon = name => {
 catchPokemon();
 
 const didICatchIt = name => {
+  let find = pokemons.includes(`Metapod`);
+  document.getElementById("app7").textContent = find;
   // check the pokemons to see if a specific pokemon is in the array
 };
+didICatchIt(`Metapod`);
 
 const addInThirdPlace = () => {
+  pokemons.splice(2, 0, "Clefairy");
+  document.getElementById("app8").textContent = pokemons;
   // add the pokemon "Clefairy" in the third place of the array
   // print the list so you see its there.
 };
+addInThirdPlace();
 
 // ***BONUS***
 const theLongestName = () => {
