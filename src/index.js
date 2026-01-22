@@ -22,8 +22,11 @@ const countThem = () => {
 countThem();
 
 const orderThem = () => {
+  let sorted = pokemons.sort();
+  document.getElementById("app").textContent = `${sorted}`;
   // order the pokemons alphabetically
 };
+orderThem();
 
 const flipThem = () => {
   // reverse the order of the pokemons
