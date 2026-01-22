@@ -26,15 +26,21 @@ const orderThem = () => {
   document.getElementById("app").textContent = `${sorted}`;
   // order the pokemons alphabetically
 };
-orderThem();
-
 const flipThem = () => {
+  let reversed = pokemons.reverse();
+  document.getElementById("app").textContent = `${reversed}`;
   // reverse the order of the pokemons
 };
+orderThem();
+flipThem();
 
 const makeThemBig = () => {
+  let uppercased = pokemons.map(pokemon => pokemon.toUpperCase());
+  document.getElementById("app2").textContent = `${uppercased}`;
   // print the pokemons in UPPERCASE letters
 };
+
+makeThemBig();
 
 const onlyTheBs = () => {
   // only print the pokemons that starts with B
