@@ -57,14 +57,20 @@ const notTheCs = () => {
 notTheCs();
 
 const nameAndIdThanks = () => {
+  const numberNames = pokemons.map((pokemon, index) => `number ${index} - ${pokemon}`);
+  document.getElementById("app5").textContent = `${numberNames}`;
   // print out name and index of all pokemons
   // like: number x - Squirtle
 };
+nameAndIdThanks();
 
 const catchPokemon = name => {
+  pokemons.push(`Poliwag`)
+  document.getElementById("app6").textContent = `${pokemons}`;
   // add a pokemon with a name of your choice to the list,
   // print the list so you see its there.
 };
+catchPokemon();
 
 const didICatchIt = name => {
   // check the pokemons to see if a specific pokemon is in the array
